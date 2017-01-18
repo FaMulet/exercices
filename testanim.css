@@ -1,0 +1,505 @@
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+#Bird1 {
+  position: relative;
+  margin-top: 130px;
+  margin-left: 30px;
+  width: 200px;
+  height: 140px;
+}
+#Bird1.frame1 {
+  animation: frame1 2s linear 0s infinite alternate;
+}
+@keyframes frame1 {
+  0% {margin-top: 130px;}
+  50% {margin-top: 80px;}
+  100% {margin-top: 130px;}
+}
+
+/*#cache {
+  visibility: hidden;
+}
+#cache.frameCome {
+  animation: frameCome 0.5s ease-out 0s forwards;
+}
+@keyframes frameCome {
+  0% {margin-right: 0px; opacity: 0;}
+  100% {margin-right: 500px; opacity: 1; visibility: visible;}
+}*/
+
+#Bird2 {
+  position: relative;
+  margin-top: 130px;
+  margin-left: 630px;
+  width: 200px;
+  height: 140px;
+  visibility: hidden;
+  opacity: 0;
+}
+#Bird2.frame2 {
+  animation: frameCome 1.5s ease-out 0s forwards;
+}
+#Bird2.frame2move {
+  animation: frame2move 2s linear 1s infinite alternate;
+  visibility: visible;
+  opacity: 1;
+}
+@keyframes frame2move {
+  0% {margin-top: 130px;}
+  50% {margin-top: 80px;}
+  100% {margin-top: 130px;}
+}
+@keyframes frameCome {
+  100% {margin-left: 500px; visibility: visible; opacity: 1;}
+}
+
+/*#Bird2.frameCome {
+  animation: frameCome 1s ease-out 2s forwards;
+}
+@keyframes frameCome {
+  0% {margin-right: 0px; opacity: 0;}
+  100% {margin-right: 300px; opacity: 1; visibility: visible;}
+}*/
+
+
+/*CORPS 1/////////////////////////////////////////////////////*/
+
+
+#b1a {
+  z-index: 1;
+  position: absolute;
+  left: 340px;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-bottom: 40px solid #00AE9E;
+  border-right: 40px solid transparent;
+}
+
+#b1b {
+  z-index: 1;
+  position: absolute;
+  left: 215px;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-bottom: 90px solid #00AE9E;
+  border-left: 90px solid transparent;
+  position: relative;
+}
+#b1b:before {
+  width: 30px;
+  height: 90px;
+  background-color: #00AE9E;
+  content: "";
+  position: absolute;
+}
+
+
+#b1c{
+  z-index: 1;
+  position: absolute;
+  left: 155px;
+  top: 145px;
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-top: 110px solid #00AE9E;
+}
+
+#b1d{
+  z-index: 1;
+  position: absolute;
+  left: 165px;
+  top: 165px;
+  width: 0;
+  height: 0;
+  border-top: 110px solid transparent;
+  border-left: 90px solid #00AE9E;
+  border-bottom: 110px solid transparent;
+}
+
+/*CORPS 2//////////////////////////////////////////////////*/
+
+
+#b2a {
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-bottom: 40px solid #FF0084;
+  border-left: 40px solid transparent;
+}
+#b2b {
+  z-index: 1;
+  position: absolute;
+  left: 75px;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-bottom: 90px solid #FF0084;
+  border-right: 90px solid transparent;
+  position: relative;
+}
+#b2b:before {
+  width: 30px;
+  height: 90px;
+  background-color: #FF0084;
+  content: "";
+  right: 0;
+  position: absolute;
+}
+
+#b2c {
+  z-index: 1;
+  position: absolute;
+  left: 45px;
+  top: 145px;
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-top: 110px solid #FF0084;
+}
+
+#b2d {
+  z-index: 1;
+  position: absolute;
+  left: 125px;
+  top: 165px;
+  width: 0;
+  height: 0;
+  border-top: 110px solid transparent;
+  border-right: 90px solid #FF0084;
+  border-bottom: 110px solid transparent;
+}
+
+
+
+/*ANIMATION AILE 1////////////////////////////////////////////*/
+
+
+#b1e_x {
+  z-index: 2;
+  position: absolute;
+  bottom: 0px;
+  left: 155px;
+  width: 0;
+  height: 0;
+  border-bottom: 140px solid #00AE9E;
+  border-right: 140px solid transparent;
+}
+#b1e_x.frame1e_x {
+  animation: frame1e_x 2s linear 0s infinite alternate;
+}
+@keyframes frame1e_x {
+  25% {border-bottom: 0px solid #00AE9E;}
+  75% {border-bottom: 0px solid #00AE9E;}
+  100% {border-bottom: 140px solid #00AE9E;}
+}
+
+
+#b1e_y {
+  z-index: 2;
+  position: absolute;
+  top: 145px;
+  left: 155px;
+  width: 0;
+  height: 0;
+  border-top: 0px solid #2e6560;
+  border-right: 140px solid transparent;
+}
+#b1e_y.frame1e_y {
+  animation: frame1e_y 2s linear 0s infinite alternate;
+}
+@keyframes frame1e_y {
+  25% {border-top: 0px solid #2e6560;}
+  50% {border-top: 140px solid #00AE9E;}
+  75% {border-top: 0px solid #2e6560;}
+}
+
+
+
+
+#b1f_x {
+  z-index: 2;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border-top: 140px solid #00AE9E;
+  border-left: 140px solid transparent;
+}
+#b1f_x.frame1f_x {
+  animation: frame1f_x 2s linear 0s infinite alternate;
+}
+@keyframes frame1f_x {
+  25% {top: 140px; border-top: 0px solid #00AE9E;}
+  75% {top: 140px; border-top: 0px solid #00AE9E;}
+  100% {border-top: 140px solid #00AE9E;}
+}
+
+#b1f_y {
+  z-index: 2;
+  position: absolute;
+  top: 145px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-bottom: 0px solid #2e6560;
+  border-left: 140px solid transparent;
+}
+#b1f_y.frame1f_y {
+  animation: frame1f_y 2s linear 0s infinite alternate;
+}
+@keyframes frame1f_y {
+  25% {border-bottom: 0px solid #2e6560;}
+  50% {border-bottom: 140px solid #00AE9E;}
+  75% {border-bottom: 0px solid #2e6560;}
+}
+
+
+
+#b1g_x {
+  z-index: 1;
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  transform: rotate(-10deg);
+  width: 0;
+  height: 0;
+  border-top: 120px solid rgba(0, 174, 158, 0.5);
+  border-left: 120px solid transparent;
+}
+#b1g_x.frame1g_x {
+  animation: frame1g_x 2s linear 0s infinite alternate;
+}
+@keyframes frame1g_x {
+  20% {top: 140px; border-top: 0px solid rgba(46, 101, 96, 0);}
+  75% {top: 140px; border-top: 0px solid rgba(46, 101, 96, 0);}
+  100% {border-top: 120px solid rgba(0, 174, 158, 0.5);}
+}
+
+#b1g_y {
+  z-index: 1;
+  position: absolute;
+  top: 145px;
+  left: 15px;
+  transform: rotate(10deg);
+  width: 0;
+  height: 0;
+  border-bottom: 0px solid rgba(0, 174, 158, 0.5);
+  border-left: 120px solid transparent;
+}
+#b1g_y.frame1g_y {
+  animation: frame1g_y 2s linear 0s infinite alternate;
+}
+@keyframes frame1g_y {
+  25% {border-bottom: 0px solid rgba(46, 101, 96, 0);}
+  50% {border-bottom: 120px solid rgba(0, 174, 158, 0.5);}
+  70% {border-bottom: 0px solid rgba(46, 101, 96, 0);}
+}
+
+
+/*ANIMATION AILE 2////////////////////////////////////////////*/
+
+
+#b2e_x {
+  z-index: 2;
+  position: absolute;
+  bottom: 0px;
+  left: 85px;
+  width: 0;
+  height: 0;
+  border-bottom: 140px solid #FF0084;
+  border-left: 140px solid transparent;
+}
+#b2e_x.frame2e_x {
+  animation: frame2e_x 2s linear 0s infinite alternate;
+}
+@keyframes frame2e_x {
+  25% {border-bottom: 0px solid #FF0084;}
+  75% {border-bottom: 0px solid #FF0084;}
+  100% {border-bottom: 140px solid #FF0084;}
+}
+
+
+#b2e_y {
+  z-index: 2;
+  position: absolute;
+  top: 145px;
+  left: 85px;
+  width: 0;
+  height: 0;
+  border-top: 0px solid #b6025f;
+  border-left: 140px solid transparent;
+}
+#b2e_y.frame2e_y {
+  animation: frame2e_y 2s linear 0s infinite alternate;
+}
+@keyframes frame2e_y {
+  25% {border-top: 0px solid #b6025f;}
+  50% {border-top: 140px solid #FF0084;}
+  75% {border-top: 0px solid #b6025f;}
+}
+
+
+
+
+#b2f_x {
+  z-index: 2;
+  position: absolute;
+  left: 230px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border-top: 140px solid #FF0084;
+  border-right: 140px solid transparent;
+}
+#b2f_x.frame2f_x {
+  animation: frame2f_x 2s linear 0s infinite alternate;
+}
+@keyframes frame2f_x {
+  25% {top: 140px; border-top: 0px solid #FF0084;}
+  75% {top: 140px; border-top: 0px solid #FF0084;}
+  100% {border-top: 140px solid #FF0084;}
+}
+
+#b2f_y {
+  z-index: 2;
+  position: absolute;
+  top: 145px;
+  left: 230px;
+  width: 0;
+  height: 0;
+  border-bottom: 0px solid #b6025f;
+  border-right: 140px solid transparent;
+}
+#b2f_y.frame2f_y {
+  animation: frame2f_y 2s linear 0s infinite alternate;
+}
+@keyframes frame2f_y {
+  25% {border-bottom: 0px solid #b6025f;}
+  50% {border-bottom: 140px solid #FF0084;}
+  75% {border-bottom: 0px solid #b6025f;}
+}
+
+
+
+#b2g_x {
+  z-index: 1;
+  position: absolute;
+  left: 245px;
+  top: 20px;
+  transform: rotate(10deg);
+  width: 0;
+  height: 0;
+  border-top: 120px solid rgba(255, 0, 132, 0.5);
+  border-right: 120px solid transparent;
+}
+#b2g_x.frame2g_x {
+  animation: frame2g_x 2s linear 0s infinite alternate;
+}
+@keyframes frame2g_x {
+  20% {top: 140px; border-top: 0px solid rgba(46, 101, 96, 0);}
+  75% {top: 140px; border-top: 0px solid rgba(46, 101, 96, 0);}
+  100% {border-top: 120px solid rgba(255, 0, 132, 0.5);}
+}
+
+#b2g_y {
+  z-index: 1;
+  position: absolute;
+  top: 145px;
+  left: 245px;
+  transform: rotate(-10deg);
+  width: 0;
+  height: 0;
+  border-bottom: 0px solid rgba(255, 0, 132, 0.5);
+  border-right: 120px solid transparent;
+}
+#b2g_y.frame2g_y {
+  animation: frame2g_y 2s linear 0s infinite alternate;
+}
+@keyframes frame2g_y {
+  25% {border-bottom: 0px solid rgba(46, 101, 96, 0);}
+  50% {border-bottom: 120px solid rgba(255, 0, 132, 0.5);}
+  70% {border-bottom: 0px solid rgba(46, 101, 96, 0);}
+}
+
+
+/*BOUTONS///////////////////////////////////////////////////*/
+
+
+#btnStart {
+  z-index: 2;
+  position: absolute;
+  left: 286px;
+  top: 384px;
+  width: 142px;
+}
+
+#btnStart.frameGo {
+  animation: frameGo 0.8s ease-in 0s forwards;
+}
+@keyframes frameGo {
+  100% {margin-left: 600px; opacity: 0;}
+}
+
+#txt1 {
+  z-index: 3;
+  position: absolute;
+  top: 4px;
+  left: 20px;
+  color: #FFF;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+#heart {
+  z-index: 3;
+  position: absolute;
+  top: 7px;
+  left: 109px;
+}
+#heart.beat {
+  animation: heartbeat 1s ease-in 0s infinite alternate;
+}
+@keyframes heartbeat {
+  0% {transform: scale(1);
+    /*margin-right: 5px;*/
+  }
+  100% {transform: scale(1.5);
+    /*margin-bottom: 2px*/
+    }
+}
+#bS1 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 11px solid #000;
+  border-bottom: 13px solid transparent;
+}
+#bS2 {
+  position: absolute;
+  left: 11px;
+  width: 120px;
+  height: 26px;
+  background-color: #000;
+}
+#bS3 {
+  position: absolute;
+  left: 131px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-left: 11px solid #000;
+  border-bottom: 13px solid transparent;
+}

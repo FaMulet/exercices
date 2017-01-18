@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Romance</title>
+  </head>
+  <link rel="stylesheet" href="testanim.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body>
+    <div id="container">
+      <div id="Bird1">
+        <div id="b1a"></div>
+        <div id="b1b"></div>
+
+        <div id="b1c"></div>
+        <div id="b1d"></div>
+
+        <div id="b1e_x"></div><div id="b1e_y"></div>
+        <div id="b1f_x"></div><div id="b1f_y"></div>
+        <div id="b1g_x"></div><div id="b1g_y"></div>
+      </div>
+
+      <div id="btnStart" onmouseover="pret()" onclick="envol()" style="cursor:pointer">
+        <div id="txt1">Give some </div>
+        <i id="heart" class="fa fa-heart" style="font-size: 10px; color: #FF0084;"></i>
+        <div id="bS1"></div>
+        <div id="bS2"></div>
+        <div id="bS3"></div>
+        <div id="bS4"></div>
+      </div>
+
+      <div id="cache">
+        <div id="Bird2">
+          <div id="b2a"></div>
+          <div id="b2b"></div>
+
+          <div id="b2c"></div>
+          <div id="b2d"></div>
+
+          <div id="b2e_x"></div><div id="b2e_y"></div>
+          <div id="b2f_x"></div><div id="b2f_y"></div>
+          <div id="b2g_x"></div><div id="b2g_y"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+      var $heart = document.getElementById("heart");
+      var $btnGo = document.getElementById("btnStart");
+      var $tri1 = document.getElementById("Bird1");
+      var $tri1e_x = document.getElementById("b1e_x");
+      var $tri1e_y = document.getElementById("b1e_y");
+      var $tri1f_x = document.getElementById("b1f_x");
+      var $tri1f_y = document.getElementById("b1f_y");
+      var $tri1g_x = document.getElementById("b1g_x");
+      var $tri1g_y = document.getElementById("b1g_y");
+
+      $heart.classList.add("beat");
+
+      function pret() {
+
+      }
+
+
+      function envol() {
+        $btnGo.classList.add("frameGo");
+
+        $tri1.classList.add("frame1");
+        $tri1e_x.classList.add("frame1e_x");
+        $tri1e_y.classList.add("frame1e_y");
+        $tri1f_x.classList.add("frame1f_x");
+        $tri1f_y.classList.add("frame1f_y");
+        $tri1g_x.classList.add("frame1g_x");
+        $tri1g_y.classList.add("frame1g_y");
+
+        // var $cache = document.getElementById("cache");
+        var $tri2 = document.getElementById("Bird2");
+        var $tri2e_x = document.getElementById("b2e_x");
+        var $tri2e_y = document.getElementById("b2e_y");
+        var $tri2f_x = document.getElementById("b2f_x");
+        var $tri2f_y = document.getElementById("b2f_y");
+        var $tri2g_x = document.getElementById("b2g_x");
+        var $tri2g_y = document.getElementById("b2g_y");
+
+        // $cache.classList.add("frameCome");
+        $tri2.classList.add("frame2");
+          $tri2.classList.add("frame2move");
+
+        $tri2e_x.classList.add("frame2e_x");
+        $tri2e_y.classList.add("frame2e_y");
+        $tri2f_x.classList.add("frame2f_x");
+        $tri2f_y.classList.add("frame2f_y");
+        $tri2g_x.classList.add("frame2g_x");
+        $tri2g_y.classList.add("frame2g_y");
+
+       }
+
+
+
+    </script>
+<!--
+https://css-tricks.com/controlling-css-animations-transitions-javascript/
+http://www.w3schools.com/css/css3_animations.asp
+https://developer.mozilla.org/fr/docs/Web/API/WindowTimers/setTimeout
+https://developer.mozilla.org/fr/docs/Web/CSS/Animations_CSS/Utiliser_les_animations_CSS
+-->
+  </body>
+</html>
